@@ -65,7 +65,6 @@ body {
 }
 
 #banner {
-  font-size: 50px;
   padding-right: 10px;
   height: 100px;
   background: var(--bright-color);
