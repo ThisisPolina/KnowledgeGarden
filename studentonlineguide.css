@@ -495,5 +495,9 @@ ol {
   .answer {
     font-size: 0.8rem;
   }
+
+#credits {
+column-count:2;
+gap:30px;
 }
 
