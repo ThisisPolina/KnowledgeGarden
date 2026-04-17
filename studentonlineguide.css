@@ -482,10 +482,10 @@ ol {
     background-image: url("starclover.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 2em;
-    height: 2em;
+    width: 1.3em;
+    height: 1.3em;
     margin-left: 2px;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   .events {
