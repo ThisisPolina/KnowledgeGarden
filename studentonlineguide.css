@@ -461,6 +461,9 @@ ol {
     margin: 0;
   }
 
+  #banner span {
+  margin-top:5px;
+
   #mobile-sidebar {
     display: inline-block;
     width: 100%;
@@ -477,8 +480,8 @@ ol {
     background-image: url("starclover.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 1.2em;
-    height: 1.2em;
+    width: 1em;
+    height: 1em;
     margin-left: 2px;
     vertical-align: middle;
     margin-top:2px;
