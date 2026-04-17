@@ -62,7 +62,7 @@ letter-spacing: 1px;
 
 body {
 margin: 0;
-font-size: clamp(20px, 1.2vw, 18px);
+font-size: clamp(14px, 1.2vw, 18px);
 color(--text-color);
 }
 
@@ -76,7 +76,7 @@ padding: 0 10px;
 }
 
 #banner {
-font-size: clamp(15px, 5vw, 50px);
+font-size: clamp(28px, 5vw, 50px);
 padding-right: 10px;
 min-height: 80px;
 background: var(--bright-color);
