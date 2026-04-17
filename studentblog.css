@@ -1,7 +1,7 @@
 :root {
   --text-color: #514D4A;
   --switch-color: #514D4A;
- --border-color: #514D4A;
+  --border-color: #514D4A;
   --site-name-color: #C9E5AE;
 
   --link-color: #06ADC1;
@@ -13,8 +13,7 @@
   --h3-text-color: #4BE0D5;
 
   --hover-color: #B7E6DE;
-  --linear-background:linear-gradient(to left, rgb(201, 229, 174) 0%, rgba(201, 229, 174, 0) 100%);
-
+  --linear-background: linear-gradient(to left, rgb(201, 229, 174) 0%, rgba(201, 229, 174, 0) 100%);
 }
 
 body.darkmode {
@@ -48,6 +47,7 @@ body {
   margin: 0;
   font-size: clamp(14px, 1.2vw, 18px);
   position: relative;
+  background-color: var(--body-color);
 }
 
 #page {
@@ -55,43 +55,42 @@ body {
   margin: auto;
   position: relative;
   z-index: 1;
-    border:1px dotted black;
-padding-bottom:2px;
-margin-top:5px;
-margin-bottom:5px;
+  border: 1px dotted black;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #banner {
-  font-size: 50px;
+  font-size: clamp(28px, 6vw, 50px);
   text-align: right;
   font-style: italic;
-  color:var(--site-name-color);
-  padding-right:10px;
-  border-bottom:1px dotted black;
+  color: var(--site-name-color);
+  padding-right: 10px;
+  border-bottom: 1px dotted black;
 }
-
 
 nav {
   width: 100%;
-  display:flex;
-  margin-top:10px;
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
-.nav{
-  flex:1;
-    font-size:20px;
-    color: var(--nav-color);
-      padding:10px;
-
-
+.nav {
+  flex: 1 1 120px;
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--nav-color);
+  padding: 10px;
 }
+
 .nav-bar a {
   display: flex;
   width: 100%;
   height: 100%;
   text-align: center;
   text-decoration: none;
-  font-size: 25px;
+  font-size: clamp(18px, 3vw, 25px);
   align-items: center;
   justify-content: center;
   transition: background 0.2s ease;
@@ -115,48 +114,46 @@ nav {
 #theme-switch {
   cursor: pointer;
   display: inline-block;
-  user-select:none;
-text-align:right;  
-font-size:20px;
+  user-select: none;
+  text-align: right;
+  font-size: clamp(16px, 2.5vw, 20px);
   color: var(--switch-color);
-  border-top:1px dotted black;
-    border-bottom:1px dotted black;
-  width:100%;
-  padding:10px;
-  border-top:1px dotted black;
-  margin-top:10px;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 #content {
-  font-size: clamp(16px, 6vw, 20px);
+  font-size: clamp(15px, 4vw, 20px);
 }
 
 h2 {
   margin: 10px 0 0 0;
   color: var(--h2-text-color);
   border-bottom: 1px dashed var(--border-color);
-  text-align:right;
+  text-align: right;
   background: var(--linear-background);
-  padding-right:10px;
- padding-top:2px;
-  padding-bottom:2px;
-  
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: clamp(18px, 4vw, 24px);
 }
 
 h3 {
   border-bottom: 1px solid var(--border-color);
   color: var(--h3-text-color);
-  font-size: 29px;
+  font-size: clamp(20px, 5vw, 29px);
   font-weight: bold;
-  text-align:right;
+  text-align: right;
   background: var(--linear-background);
-  padding-right:10px;
- padding-top:2px;
-  padding-bottom:2px;
-  margin-top:10px;
-
-
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 10px;
 }
+
 p {
   color: var(--text-color);
   background-color: transparent;
@@ -187,7 +184,7 @@ a {
 .buildings {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 55px;
+  gap: clamp(15px, 5vw, 55px);
   max-width: 1000px;
 }
 
@@ -197,12 +194,14 @@ a {
 
 .building img {
   width: 100%;
-  height: 450px;
+  height: auto;
+  max-height: 450px;
+  object-fit: cover;
 }
 
 .building p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: clamp(14px, 2.5vw, 16px);
 }
 
 .buildinginfo {
@@ -219,6 +218,8 @@ a {
 .rooms img {
   display: inline-block;
   margin: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
 summary {
@@ -234,47 +235,45 @@ summary::-webkit-details-marker {
     flex-direction: column;
     gap: 10px;
   }
-}
 
-@media (max-width: 768px) {
   h2, h3 {
-text-align:left;
+    text-align: left;
   }
 }
 
-footer{
-  margin-top:10px;
-  background-color:var(--site-name-color);
-  padding:5px;
-  margin-left:0px;
-  margin-bottom:10px;
+footer {
+  margin-top: 10px;
+  background-color: var(--site-name-color);
+  padding: 5px;
+  margin-left: 0px;
+  margin-bottom: 10px;
 }
 
-.noliststyle ul{
-list-style:none;
-padding-left:0px;
-margin-top:10px;
-margin-bottom:10px;
+.noliststyle ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.noliststyle li{
-list-style:none;
+.noliststyle li {
+  list-style: none;
 }
-
 
 .noliststyle {
-padding-left:0px;}
-
-.events{
-  display:grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:10px;
-margin-top:10px;
+  padding-left: 0px;
 }
 
-.events iframe{
-  width:100%;
-  height:500px;
+.events {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.events iframe {
+  width: 100%;
+  height: clamp(300px, 60vw, 500px);
 }
 
 @media (max-width: 600px) {
@@ -282,11 +281,7 @@ margin-top:10px;
     grid-template-columns: 1fr;
   }
 
-  .events iframe {
-    height: 450px;
-  }
-
-  .buildings{
-    grid-template-columns:1fr;
+  .buildings {
+    grid-template-columns: 1fr;
   }
 }
