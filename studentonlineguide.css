@@ -450,6 +450,11 @@ ol {
     display: none;
   }
 
+    section {
+    text-align: left;
+    hyphens: auto;
+  }
+
   #wrapper {
     margin: 0;
   }
