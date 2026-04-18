@@ -103,7 +103,7 @@ body {
 #content {
   display: flex;
   align-items: stretch;
-  min-height: 650px;
+  min-height: 100vh;
   background: var(--body-color);
 }
 
@@ -123,7 +123,8 @@ margin-bottom:5px;
   flex: 1;
 padding-top: 0;
 padding-right: 20px;
-padding-bottom: 0;
+  min-height: 650px;
+  padding-bottom: 60px;
 padding-left: 20px;  background: var(--body-color);
   box-shadow: var(--actual-stuff-box-shadow);
   border-left: 1px solid gray;
@@ -472,7 +473,7 @@ ol {
     height: 1.1em;
     margin-left: 2px;
     vertical-align: middle;
-    margin-top:4px;
+    margin-bottom:1px;
   }
 
   .events {
