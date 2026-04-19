@@ -1,60 +1,4 @@
- initUI() {
-  let darkmode = localStorage.getItem('darkmode');
-  const themeSwitch = document.getElementById('theme-switch');
-
-  const updateImage = () => {
-    if (!themeSwitch) return;
-    themeSwitch.src = darkmode === "active"
-      ? "lightmode.png"
-      : "darkmode.png";
-  };
-
-  const enableDarkmode = () => {
-    document.body.classList.add('darkmode');
-    localStorage.setItem('darkmode', 'active');
-    darkmode = "active";
-    updateImage();
-  };
-
-  const disableDarkmode = () => {
-    document.body.classList.remove('darkmode');
-    localStorage.removeItem('darkmode');
-    darkmode = null;
-    updateImage();
-  };
-
-  if (darkmode === "active") {
-    document.body.classList.add('darkmode');
-  }
-
-  updateImage();
-
-  if (themeSwitch) {
-    themeSwitch.onclick = () => {
-      darkmode !== "active" ? enableDarkmode() : disableDarkmode();
-    };
-  }
-
-  document.querySelectorAll('.flag-button').forEach(button => {
-    button.onclick = () => {
-      setLanguage(button.dataset.language);
-    };
-  });
-
-  const savedLang = localStorage.getItem('lang') || 'en';
-  setLanguage(savedLang);
-}
-
-function loadPage(page) {
-  fetch(page)
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("actualstuff").innerHTML = data;
-
-      const savedLang = localStorage.getItem('lang') || 'en';
-      setLanguage(savedLang);
-    });
-}
+function initUI() { let darkmode = localStorage.getItem('darkmode'); const themeSwitch = document.getElementById('theme-switch'); const updateImage = () => { if (!themeSwitch) return; themeSwitch.src = darkmode === "active" ? "lightmode.png" : "darkmode.png"; }; const enableDarkmode = () => { document.body.classList.add('darkmode'); localStorage.setItem('darkmode', 'active'); darkmode = "active"; updateImage(); }; const disableDarkmode = () => { document.body.classList.remove('darkmode'); localStorage.removeItem('darkmode'); darkmode = null; updateImage(); }; if (darkmode === "active") { document.body.classList.add('darkmode'); } updateImage(); if (themeSwitch) { themeSwitch.onclick = () => { darkmode !== "active" ? enableDarkmode() : disableDarkmode(); }; } document.querySelectorAll('.flag-button').forEach(button => { button.onclick = () => { setLanguage(button.dataset.language); }; }); const savedLang = localStorage.getItem('lang') || 'en'; setLanguage(savedLang); } function loadPage(page) { fetch(page) .then(res => res.text()) .then(data => { document.getElementById("actualstuff").innerHTML = data; const savedLang = localStorage.getItem('lang') || 'en'; setLanguage(savedLang); initUI(); }); }
 
 const translations = {
 en: {
@@ -632,19 +576,4 @@ ph: {
   drivinganswer11: ""
 }
 };
-function setLanguage(lang) {
-  localStorage.setItem('lang', lang);
-  document.documentElement.setAttribute('lang', lang);
-
-  document.querySelectorAll('[data-key]').forEach(el => {
-    const key = el.dataset.key;
-
-    if (translations[lang] && translations[lang][key]) {
-      el.textContent = translations[lang][key];
-    } else if (translations.en[key]) {
-      el.textContent = translations.en[key];
-    }
-  });
-}
-
-document.addEventListener('DOMContentLoaded', initUI);
+function setLanguage(lang) { localStorage.setItem('lang', lang); document.documentElement.setAttribute('lang', lang); document.querySelectorAll('[data-key]').forEach(el => { const key = el.dataset.key; if (translations[lang] && translations[lang][key]) { el.textContent = translations[lang][key]; } }); } document.addEventListener('DOMContentLoaded', initUI);
