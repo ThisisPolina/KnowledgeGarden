@@ -383,7 +383,7 @@ iframe {
 
 ol {
   column-count: 2;
-  column-gap: 50px;
+  column-gap: 60px;
 }
 
 .question, .answer {
@@ -448,6 +448,7 @@ ol {
 #credits li {
   break-inside: avoid;
   margin-bottom: 6px;
+  list-style:none;
 }
 
 
@@ -530,5 +531,10 @@ section {
   #banner span {
   margin-top:5px;}
 
+}
+
+ol {
+  column-count: 2;
+  column-gap: 70px;
 }
 
