@@ -400,6 +400,7 @@ ol {
   gap: 15px;
   border: 1px solid var(--text-color);
   padding: 15px;
+  margin-bottom:20px;
 }
 
 .pfp {
@@ -449,11 +450,6 @@ ol {
   margin-bottom: 6px;
 }
 
-  .student {
-    gap: 20px;
-    padding: 20px 0;
-  margin-bottom:20px;
-  }
 
 @media (max-width: 768px) {
   #sidebar {
