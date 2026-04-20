@@ -250,6 +250,71 @@ housingquestion4: "How do dormitories work?",
 housinganswer4: "The international student dorm is located off campus. You usually need to ask current students if there is an available space, as rooms are shared with around 4 people. The cost is about 6000 baht for the whole semester (around 4 months), with a one-time 1000 baht deposit when you first move in, and about 400 baht for water utilities.",
 
 housingfacilities: "The building has 7 floors, two small elevators, and stairs. Each room includes a small toilet, a small shower, and a small kitchen (no fridge). There are also coin-operated washing machines and a water refill station on the first floor.",
+
+buildings: "Buildings",
+
+map: "The Map of Wiang Bua Campus",
+
+map indicators: "The map indicators",
+
+map indicators list: "The map indicators list",
+
+indicator1: "President’s Office Building/Finance Division/Office of Registration and Processing",
+indicator2: "Department of Computer Science",
+indicator3: "Department of Environmental Science",
+indicator4: "Department of Chemistry",
+indicator5: "Department of Mathematics",
+indicator6: "Student Development Division",
+indicator7: "Faculty of Humanities and Social Sciences",
+indicator8: "Coordination Center of Agricultural Technology Faculty",
+indicator9: "Office of Digital Education",
+indicator10: "Home Economics Building",
+indicator11: "Gymnasium",
+indicator12: "Department of Industrial Technology",
+indicator13: "Music Building",
+indicator14: "Performing Arts (Dance) Building",
+indicator15: "Fine Arts Building",
+indicator16: "Department of Biology",
+indicator17: "Department of Physics",
+indicator18: "Department of Public Health",
+indicator19: "The Princess Maha Chakri Sirindhorn Building",
+indicator20: "Faculty of Management Science",
+indicator21: "Fine Arts Study Building",
+indicator22: "Demonstration School of Chiang Mai Rajabhat University Building",
+indicator23: "Special Education Center Building",
+indicator24: "International Student Dormitory Building",
+indicator25: "Student Union",
+indicator26: "Library Office",
+indicator27: "Rajabhat Commemoration Building",
+indicator28: "Faculty of Science and Technology",
+indicator29: "90th Anniversary Rajabhat Building",
+
+buildings section: "The buildings",
+
+building 90th: "IC-CMRU Building/90th Building",
+
+building library: "The Library",
+library link: "The Library",
+
+building digital cmru: "The Digital CMRU Building",
+digital cmru link: "The Digital CMRU Building",
+
+building central division: "Central Division Office",
+central division link: "Central Division Office",
+
+building student division: "Student Division Office",
+student division link: "Student Division Office",
+
+building memorial: "27th Building/Memorial Building",
+memorial building link: "27th Building/Memorial Building",
+
+building infirmary: "The Infirmary",
+infirmary link: "The Infirmary",
+
+building cmru shop: "The CMRU Shop",
+cmru shop link: "The CMRU Shop",
+
+more buildings: "More buildings coming soon",
   
 },
 th: {
