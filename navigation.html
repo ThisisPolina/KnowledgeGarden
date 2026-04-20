@@ -1,7 +1,10 @@
 <div class="smallsection">
-<h2>Buildings</h2>
+<h2 data-key="buildings">Buildings</h2>
 
-<section><h3 data-key="map">The Map of Wiang Bua Campus </h3></section>
+<section>
+  <h3 data-key="map">The Map of Wiang Bua Campus</h3>
+</section>
+
 <div id="map">
   <img src="map.webp" width="100%" onclick="openMap()">
 </div>
@@ -9,102 +12,108 @@
 <div id="mapPopup" onclick="closeMap()">
   <img src="map.webp">
 </div>
-<section><h4>The map indicators </h4></section>
-<p data-key="mapindicators">
-<ol>
-<li>President’s Office Building/Finance Division/Office of Registration and Processing</li>
-<li>Department of Computer Science</li>
-<li>Department of Environmental Science</li>
-<li>Department of Chemistry</li>
-<li>Department of Mathematics</li>
-<li>Student Development Division</li>
-<li>Faculty of Humanities and Social Sciences</li>
-<li>Coordination Center of Agricultural Technology Faculty</li>
-<li>Office of Digital Education</li>
-<li>Home Economics Building</li>
-<li>Gymnasium</li>
-<li>Department of Industrial Technology</li>
-<li>Music Building</li>
-<li>Performing Arts (Dance) Building</li>
-<li>Fine Arts Building</li>
-<li>Department of Biology</li>
-<li>Department of Physics</li>
-<li>Department of Public Health</li>
-<li>The Princess Maha Chakri Sirindhorn Building</li>
-<li>Faculty of Management Science</li>
-<li>Fine Arts Study Building</li>
-<li>Demonstration School of Chiang Mai Rajabhat University Building</li>
-<li>Special Education Center Building</li>
-<li>International Student Dormitory Building</li>
-<li>Student Union</li>
-<li>Library Office</li>
-<li>Rajabhat Commemoration Building</li>
-<li>Faculty of Science and Technology</li>
-<li>90th Anniversary Rajabhat Building</li>
-</ol>
-  
 
-<h4>The buildings </h4>
+<section>
+  <h4 data-key="map indicators">The map indicators</h4>
+</section>
+
+<p>
+<ol data-key="map indicators list">
+  <li data-key="indicator1">President’s Office Building/Finance Division/Office of Registration and Processing</li>
+  <li data-key="indicator2">Department of Computer Science</li>
+  <li data-key="indicator3">Department of Environmental Science</li>
+  <li data-key="indicator4">Department of Chemistry</li>
+  <li data-key="indicator5">Department of Mathematics</li>
+  <li data-key="indicator6">Student Development Division</li>
+  <li data-key="indicator7">Faculty of Humanities and Social Sciences</li>
+  <li data-key="indicator8">Coordination Center of Agricultural Technology Faculty</li>
+  <li data-key="indicator9">Office of Digital Education</li>
+  <li data-key="indicator10">Home Economics Building</li>
+  <li data-key="indicator11">Gymnasium</li>
+  <li data-key="indicator12">Department of Industrial Technology</li>
+  <li data-key="indicator13">Music Building</li>
+  <li data-key="indicator14">Performing Arts (Dance) Building</li>
+  <li data-key="indicator15">Fine Arts Building</li>
+  <li data-key="indicator16">Department of Biology</li>
+  <li data-key="indicator17">Department of Physics</li>
+  <li data-key="indicator18">Department of Public Health</li>
+  <li data-key="indicator19">The Princess Maha Chakri Sirindhorn Building</li>
+  <li data-key="indicator20">Faculty of Management Science</li>
+  <li data-key="indicator21">Fine Arts Study Building</li>
+  <li data-key="indicator22">Demonstration School of Chiang Mai Rajabhat University Building</li>
+  <li data-key="indicator23">Special Education Center Building</li>
+  <li data-key="indicator24">International Student Dormitory Building</li>
+  <li data-key="indicator25">Student Union</li>
+  <li data-key="indicator26">Library Office</li>
+  <li data-key="indicator27">Rajabhat Commemoration Building</li>
+  <li data-key="indicator28">Faculty of Science and Technology</li>
+  <li data-key="indicator29">90th Anniversary Rajabhat Building</li>
+</ol>
+</p>
+
+<h4 data-key="buildings section">The buildings</h4>
 
 <section>
   <div class="buildings">
 
-  <div class="building">
-    <img src="90th building.webp">
-    IC-CMRU Building/90th Building
-  </div>
-
-  <div class="building">
-    <img src="The CMRU Library.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('library.html'); return false;">The Library</a>
+    <div class="building" data-key="building 90th">
+      <img src="90th building.webp">
+      IC-CMRU Building/90th Building
     </div>
-  </div>
 
-  <div class="building">
-    <img src="DigitalCMRU.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('digitalcmru.html'); return false;">The Digital CMRU Building</a>
+    <div class="building" data-key="building library">
+      <img src="The CMRU Library.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('library.html'); return false;" data-key="library link">The Library</a>
+      </div>
     </div>
-  </div>
 
-  <div class="building">
-    <img src="centraldivision.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('centraldivision.html'); return false;"> Central Division Office </a>
+    <div class="building" data-key="building digital cmru">
+      <img src="DigitalCMRU.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('digitalcmru.html'); return false;" data-key="digital cmru link">The Digital CMRU Building</a>
+      </div>
     </div>
-  </div>
 
-  <div class="building">
-    <img src="studentdivision.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('studentdivision.html'); return false;"> Student Division Office </a>
+    <div class="building" data-key="building central division">
+      <img src="centraldivision.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('centraldivision.html'); return false;" data-key="central division link">Central Division Office</a>
+      </div>
     </div>
-  </div>
 
-  <div class="building">
-    <img src="MemorialBuilding.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('27thbuilding.html'); return false;">27th Building/Memorial Building</a>
+    <div class="building" data-key="building student division">
+      <img src="studentdivision.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('studentdivision.html'); return false;" data-key="student division link">Student Division Office</a>
+      </div>
     </div>
-  </div>
 
-  <div class="building">
-    <img src="The Nurse's office.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('Infirmary.html'); return false;">The Infirmary</a>
+    <div class="building" data-key="building memorial">
+      <img src="MemorialBuilding.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('27thbuilding.html'); return false;" data-key="memorial building link">27th Building/Memorial Building</a>
+      </div>
     </div>
-  </div>
 
-  <div class="building">
-    <img src="cmrushop.webp">
-    <div class="smallsection">
-      <a href="#" onclick="loadPage('CMRUSHOP.html'); return false;">The CMRU Shop</a>
+    <div class="building" data-key="building infirmary">
+      <img src="The Nurse's office.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('Infirmary.html'); return false;" data-key="infirmary link">The Infirmary</a>
+      </div>
     </div>
-  </div>
+
+    <div class="building" data-key="building cmru shop">
+      <img src="cmrushop.webp">
+      <div class="smallsection">
+        <a href="#" onclick="loadPage('CMRUSHOP.html'); return false;" data-key="cmru shop link">The CMRU Shop</a>
+      </div>
+    </div>
 
   </div>
 
-  <div class="smallsection">
+  <div class="smallsection" data-key="more buildings">
     <span>More buildings coming soon</span>
   </div>
+</section>
+</div>
