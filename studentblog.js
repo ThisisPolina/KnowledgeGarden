@@ -108,31 +108,103 @@ function loadPage(page) {
 
 const translations = {
 en: {
-  welcome: "Welcome to your guide to CMRU",
-  welcomemessage: "We created this website prototype for Social Engineer to support students, their families, and staff, as well as to attract potential stakeholders. This site is translated into multiple languages to reach as many people as possible.",
-  studentvisatitle: "Student Visa",
-  visaquestion1: "Q: What should you prepare for a student visa?",
-  visaanswer1: "A: TM30, 2 passport photos (4x6 cm), proof of payment from the 7th floor, passport, printed TDAC (Thailand Digital Arrival Card).",
-  visaquestion2: "Q: What do you need to do to apply for a student visa?",
-  visaanswer2: "A: Typically, you will need to go to a Thai embassy in your home country or a nearby country to apply there. If you are already in Thailand, you will need to go to Immigration and follow their instructions for your specific case. Go to the 4th floor of Building 27 (also known as the Memorial Building). You will receive an appointment, and they will prepare the required documents for you. The processing time is usually around 2–3 weeks. This is normal.",
-  visaquestion3: "Q: What happens next?",
-  visaanswer3: "A: After that, you will need to pick up your documents and follow the instructions given. You will need to pay 1,900 baht in cash (cash only). After you receive your visa, take a photo of the visa page in your passport and send it to the 4th floor contact (visa center).",
-  visaquestion4: "Q: What should you remember about extensions and reporting?",
-  visaanswer4: "A: Please contact the 4th floor at least 45 days before your visa expires to arrange an extension. They will schedule an appointment and provide the necessary paperwork. If you change your address, you will need to submit a new TM30 and report it to the 4th floor. Visa extensions are usually processed in the morning only and cost 1,900 baht in cash. If you need to miss class, inform your teacher in advance and prepare a leave letter. Check Thai public holidays, as Immigration may be closed. If there are many people, you may need to return the next day.",
-  visaquestion5: "Q: What are the important reminders?",
-  visaanswer5: "A: 90-day report, visa extension. You can do your 90-day report 15 days before your due date or up to 7 days after.",
-  housingtitle: "Housing",
-  housingquestion1: "Q: How can I find a place to rent?",
-  housinganswer1: "A: You can search through Facebook groups and rental posts or create your own post stating your budget and preferred area (you can include a screenshot from Google Maps). You can also contact landlords directly, but make sure they accept foreign tenants before proceeding.",
-  housingquestion2: "Q: What is the payment process when renting a place?",
-  housinganswer2: "A: Once you choose a room, you usually need to pay a deposit and the first month’s rent. Depending on the agreement, you may be able to negotiate, but some landlords may require 3–6 months’ rent upfront, especially for longer contracts.",
-  housingquestion3: "Q: How to get a TM30?",
-  housinganswer3: "A: After moving in, ask the landlord to submit a TM30 form for you. It must include your check-in (move-in) and check-out dates. If you stay beyond the original check-out date, the landlord will need to submit a new TM30.",
-  housingquestion4: "How do dormitories work?",
-  housinganswer4: "The international student dorm is located off campus. You usually need to ask current students if there is an available space, as rooms are shared with around 4 people. The cost is about 6000 baht for the whole semester (around 4 months), with a one-time 1000 baht deposit when you first move in, and about 400 baht for water utilities.",
-  housingfacilities: "The building has 7 floors, two small elevators, and stairs. Each room includes a small toilet, a small shower, and a small kitchen (no fridge). There are also coin-operated washing machines and a water refill station on the first floor.",
-  mapIndicators: "The map indicators",
-  mapIndicatorsList: "The map indicators list"
+keyinfotitle: "Key information",
+keyinfoquestion1: "Q: How do I register for courses?",
+keyinfoanswer1: "A: Go to the registration website (reg.cmru.ac.th) and log in using your student ID. Your national ID or passport is used as the password. Click Enroll then select your courses based on your study plan. After that click Confirm Enrollment and make sure to pay tuition fees within the deadline.",
+
+keyinfoquestion2: "Q: What is my CMRU email account?",
+keyinfoanswer2: "A: Your email username is your student ID followed by @cmru.ac.th. The password is cmru@DD/MM/YYYY based on your birthdate in Thai year format.",
+
+keyinfoquestion3: "Q: What are Student Activity Credits?",
+keyinfoanswer3: "A: Students must earn at least 118 activity credits throughout the 4-year course. Each activity usually gives 3 credits and these are required for graduation.",
+
+keyinfoquestion4: "Q: How can I earn Student Activity Credits?",
+keyinfoanswer4: "A: You can earn credits by joining orientation programs, workshops, seminars, club or student events, volunteer activities, and answering feedback forms or surveys.",
+
+keyinfoquestion5: "Q: What does the student health insurance cover?",
+keyinfoanswer5: "A: The insurance coverage for 2023–2024 includes medical expense coverage up to 15000 baht and funeral assistance up to 20000 baht.",
+
+keyinfoquestion6: "Q: Which hospitals are included in the partner network?",
+keyinfoanswer6: "A: Lanna Hospital Chiang Mai, Rajavej Hospital Chiang Mai, McCormick Hospital, Chiang Mai Hospital, Maharaj Nakorn Chiang Mai Hospital, Theppanya Hospital.",
+
+keyinfoquestion7: "Q: How do I use the student insurance?",
+keyinfoanswer7: "A: Show your national ID card and accident insurance card during office hours. Outside office hours you still need both documents. Contact Student Development Division at 053885430 during university business hours.",
+
+generallinkstitle: "What links should all students check?",
+generallinksdesc1: "Main university website for news, faculties, services, and registration information https://www.cmru.ac.th/home.html
+",
+generallinksdesc2: "Course registration and academic records https://reg4.cmru.ac.th/
+",
+generallinksdesc3: "Official Registrar Facebook https://www.facebook.com/regcmru
+",
+generallinksdesc4: "Information for new students https://www.academic.cmru.ac.th/ifs_cmru/
+",
+generallinksdesc5: "Faculty and department directory https://www.academic.cmru.ac.th/web63/?page_id=2392
+",
+generallinksdesc6: "Scholarships health services student activities support https://www.sdd.cmru.ac.th/web65/
+",
+generallinksdesc7: "Dormitory information https://dorm.cmru.ac.th/
+",
+generallinksdesc8: "Online courses and e certificates https://cmrumooc.teachable.com/
+",
+
+wiangbuatitle: "Wiang Bua Campus links",
+wiangbuadesc1: "Academic information for students teachers and parents https://www.academic.cmru.ac.th/web63/
+",
+wiangbuadesc2: "Registration and academic records https://reg4.cmru.ac.th/
+",
+wiangbuadesc3: "Registrar Facebook page https://www.facebook.com/regcmru
+",
+wiangbuadesc4: "International College website https://www.inter.cmru.ac.th/
+",
+wiangbuadesc5: "International College Facebook https://www.facebook.com/InternationalCollege.CMRU
+",
+wiangbuadesc6: "IC student services enrollment documents tuition internships https://www.inter.cmru.ac.th/student/
+",
+wiangbuadesc7: "Internship and training programs https://ictraining.cmru.ac.th/
+",
+wiangbuadesc8: "Library services https://www.lib.cmru.ac.th/web62/index.php
+",
+wiangbuadesc9: "CMRU Library Facebook https://www.facebook.com/cmrulibrary
+",
+wiangbuadesc10: "Digital IT services https://digital.cmru.ac.th/
+",
+wiangbuadesc11: "Digital CMRU Facebook https://www.facebook.com/digital.cmru
+",
+wiangbuadesc12: "CMRU merchandise shop https://www.facebook.com/CMRUSHOP
+",
+wiangbuadesc13: "Graduate School website https://www.graduate.cmru.ac.th/
+",
+wiangbuadesc14: "Graduate School Facebook https://www.facebook.com/GScmru/
+",
+wiangbuadesc15: "Demonstration school site http://www.satit.cmru.ac.th/2025/index.php
+",
+wiangbuadesc16: "Demonstration school Facebook https://www.facebook.com/satitrajabhatchiangmai/
+",
+wiangbuadesc17: "Faculty of Humanities and Social Sciences https://www.human.cmru.ac.th/
+",
+wiangbuadesc18: "Humanities faculty Facebook https://www.facebook.com/humancmru
+",
+
+othercampusestitle: "Other campuses information",
+othercampusesdesc1: "Faculty of Mathematics and Science https://www.msc.cmru.ac.th/
+",
+othercampusesdesc2: "Math and Science Facebook https://www.facebook.com/mathscicmu
+",
+othercampusesdesc3: "Community and renewable energy programs https://adicet.cmru.ac.th/home
+",
+othercampusesdesc4: "ADICET Facebook https://www.facebook.com/adicetfan
+",
+othercampusesdesc5: "Faculty of Science and Technology https://www.science.cmru.ac.th/
+",
+othercampusesdesc6: "Science and Technology Facebook https://www.facebook.com/SciTechCMRU
+",
+othercampusesdesc7: "Faculty of Agricultural Technology https://facagri.cmru.ac.th/web/
+",
+
+infoaboutfacultyofagriculturaltechnology: "Faculty of Agricultural Technology information https://facagri.cmru.ac.th/web/
+ and Facebook https://www.facebook.com/agricmru
+"
 },
 th: {
   studentvisatitle: "",
