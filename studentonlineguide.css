@@ -383,11 +383,6 @@ iframe {
   height: 450px;
 }
 
-ol {
-  column-count: 2;
-  column-gap: 60px;
-}
-
 .question, .answer {
   margin: 10px 0;
 }
@@ -538,8 +533,4 @@ section {
 
 }
 
-ol {
-  column-count: 2;
-  column-gap: 70px;
-}
 
