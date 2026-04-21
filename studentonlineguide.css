@@ -522,6 +522,7 @@ iframe {
     padding-top:5px;
     background: var(--light-color);
     box-shadow: var(--mobile-sidebar-box-shadow);
+    color: var(--text-color);
   }
 
   #mobile-sidebar a::after {
